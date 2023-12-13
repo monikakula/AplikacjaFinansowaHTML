@@ -1,0 +1,109 @@
+body {
+	background-image: url('img/white-waves.webp');
+    font-size: 20px; 
+	font-family: sans-serif;
+}
+h1
+{   
+	margin-top: 50px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 25px;
+}
+form {
+	margin-top: 5px;
+	background-color: white;
+	width: 400px;
+	height: 500px;
+	padding: 50px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(56, 54, 56);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(56, 54, 56);
+	box-shadow: 3px 3px 30px 5px rgba(56, 54, 56);
+}
+
+input[type='text'],
+input[type='password'] {
+	width: 90%;
+	background-color: #efefef;
+	color: #666;
+	/* border: 2px solid #ddd; */
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: none;
+	border: 2px solid #a5cda5;
+	font-family: sans-serif;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+	-webkit-box-shadow: 0px 1px 30px 5px rgb(56, 54, 56);
+	-moz-box-shadow: 0px 0px 10px 5px rgba(56, 54, 56);
+	box-shadow: 0px 0px 30px 1px rgba(56, 54, 56);
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type='submit'] {
+	width: 90%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #36b03c;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 15px 10px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type='submit']:hover {
+	background-color: #47c14d;
+}
+
+.icon {
+	width: 20px;
+	height: 25px;
+	background-color: #666;
+}
+
+.inputWithIcon input[type='text'],
+input[type='password'] {
+	padding-left: 40px;
+}
+.inputWithIcon {
+	position: relative;
+}
+.inputWithIcon i {
+	position: absolute;
+	left: 0;
+	top: 24px;
+	padding: 11px 8px;
+	color: #aaa;
+	border-radius: 5px;
+}
+form{
+	flex-direction: column;
+	display: flex;
+}
+ @media (max-width: 500px) {
+	h1,
+	h3,
+	input[type='text'],
+	input[type='password'],
+	input[type='submit'],
+	.menu-bar li {
+		font-size: smaller;
+		width: 100%;
+	}
+} 

@@ -1,0 +1,21 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('zdjecie.png');
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.btn a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.btn-light a {
+	color: black;
+}

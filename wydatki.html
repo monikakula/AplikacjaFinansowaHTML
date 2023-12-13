@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="przychod.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="flex">
+    <header>
+        <nav class="navbar navbar-dark bg-success navbar-expand-md ">
+            <a class="navbar-brand" href="index.html"><i class="fa fa-line-chart d-inline-block"></i>
+                AplikacjaFinansowa.pl</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active mr-2"><a class="nav-link" href="index.html"><i
+                                class="fa fa-home"></i>Start </a></li>
+                    <li class="nav-item mr-4"><a class="nav-link" href="przychod.html"><i class="fa fa-usd"></i>Przychody</a></li>
+                    <li class="nav-item mr-4"><a class="nav-link" href="wydatki.html"><i class="fa fa-cart-plus"></i> Wydatki</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="bilans.html"><i class="fa fa-bar-chart"></i> Przeglądaj
+                            Bilans</a></li>
+            
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <mein>
+        <article>
+            <header>
+                <h1>Dodaj wydatek:</h1>
+            </header>
+            <form action="order.php" method="post">
+                <div class="inputWithIcon inputIconBg">
+
+                    <input type="number" step="0.01" placeholder="Kwota"><i class="fa fa-pencil" aria-hidden="true"></i>
+
+                </div>
+                <div class="inputWithIcon inputIconBg">
+                    <input type="date" name="data1">
+                    <i class="fa fa-pencil"></i>
+                </div>
+                <div class="inputWithIcon inputIconBg">
+                  
+                    <select id="opis" name="opis">
+                        <option value="g"> Jedzenie</option>
+                        <option value="o" selected> Karta kredytowa</option>
+                        <option value="s">Karta debetowa</option>
+                    </select>
+                </div>
+                <div class="inputWithIcon inputIconBg">
+                
+                    <select id="opis" name="opis">
+                        <option value="j"> Jedzenie</option>
+                        <option value="m" selected>Mieszkanie</option>
+                        <option value="te">Telekomunikacja</option>
+                        <option value="o">Opieka Zdrowotna</option>
+                        <option value="u">Ubranie</option>
+                        <option value="h">Higiena</option>
+                        <option value="d">Dzieci</option>
+                        <option value="r">Rozrywka</option>
+                        <option value="tw">Wycieczka</option>
+                        <option value="sz">Szkolenia</option>
+                        <option value="osz">Oszczędności na Złotą Jesień(emerytura)</option>
+                        <option value="s">Spłata długów</option>
+                        <option value="dar">Darowizna</option>
+                        <option value="i">Inne wydatki</option>
+                    </select>
+                </div>
+                <div class="inputWithIcon inputIconBg">
+
+                    <input type="text" step="0.01" placeholder="Inne(komentarz)"><i class="fa fa-pencil"
+                        aria-hidden="true"></i>
+
+                </div>
+                <div class="submits">
+                    <input style="background-color: red;" type="reset" value="Anuluj">
+                    <input style="background-color: #36b03c;" type="submit" value="Wyślij">
+                </div>
+            </form>
+            </div>
+
+        </article>
+    </mein>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
